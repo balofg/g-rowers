@@ -34,11 +34,13 @@ html, body  {
 }
 
 .hero__title {
-  font-size: 12vw;
-  font-family: "Nunito-ExtraBold";
-  color: white;
   display: block;
   text-align: center;
+}
+
+.logo {
+  width: 80vw;
+  max-width: 900px;
 }
 
 .hero__footer {
