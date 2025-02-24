@@ -1,0 +1,187 @@
+body {
+  font-size: 28px;
+}
+
+html, body  {
+  margin: 0;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/img/bg.svg");
+  background-size: 256vw;
+  animation: bg-up 32s infinite linear;
+  max-height: 120vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.emoji-container {
+  background-color: lightgoldenrodyellow;
+  box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.3) inset;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  display: inline-block;
+}
+
+.emoji {
+  height: 1.5em;
+  display: inline;
+  margin: 0;
+}
+
+.hero__title {
+  font-size: 12vw;
+  font-family: "Nunito-ExtraBold";
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+.hero__footer {
+  font-family: "Nunito-ExtraBold";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 1rem;
+  font-size: 0.75rem;
+  color: white;
+  opacity: 0.2;
+}
+
+* {
+  font-family: "Outfit";
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Nunito-ExtraBold";
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+p {
+  margin: 0.75em;
+}
+
+.section {
+  min-height: 25vh;
+  padding: 4rem 2rem;
+}
+
+.section__content {
+  margin: auto;
+}
+
+.section--one-line {
+  min-height: 0;
+  text-align: center;
+  font-size: 0.6em;
+  overflow: auto;
+}
+
+.section--aubergine {
+  background-color: #891E70;
+  color: white;
+}
+
+.section--pink {
+  background-color: #DF326A;
+  color: white;
+}
+
+.section--tan {
+  background-color: #FECDA2;
+}
+
+.text--yellow {
+  color: #FCB122;
+}
+
+.text--disclaimer {
+  font-size: 0.5em;
+  opacity: 0.4;
+}
+
+.text--small {
+  font-size: 0.7em;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.button {
+  border: 4px solid black;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 0 black;
+  transition: background-color 0.1s linear, color 0.1s linear;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (min-width: 940px) {
+  body {
+    font-size: 36px;  
+  }
+
+  .section__content {
+    max-width: 80vw;
+  }
+
+  .section--one-line {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .section__content {
+    max-width: 1366px;
+  }  
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .row--grow {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .row__third {
+    flex-basis: 33vw;
+  }
+}
+
+@keyframes bg-up {
+  from {
+    background-position: 0vw 0vw;
+  }
+
+  to {
+    background-position: 256vw calc(-256vw * 1.55555556);
+  }
+}

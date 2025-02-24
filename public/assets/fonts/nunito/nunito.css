@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Nunito-ExtraBold';
+    src: url('nunito.woff2') format('woff2'),
+        url('nunito.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

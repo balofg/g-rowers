@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('outfit-extraLight.woff2') format('woff2'),
+        url('outfit-extraLight.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('outfit-bold.woff2') format('woff2'),
+        url('outfit-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
